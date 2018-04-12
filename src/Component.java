@@ -1,4 +1,4 @@
-public class Component {
+public abstract class Component {
 
     private double xPosition;
     private double yPosition;
@@ -13,6 +13,7 @@ public class Component {
         this.height = height;
         this.text = text;
     }
+
 
     public double getxPosition() {
         return xPosition;
@@ -52,6 +53,35 @@ public class Component {
 
     public void setText() {
         this.text = text;
+    }
+
+    public void print() {
+        System.out.println(getxPosition());
+        System.out.println(getyPosition());
+        System.out.println(getWidth());
+        System.out.println(getHeight());
+        System.out.println(getText());
+    }
+
+//    @Override
+//    public String toString() {
+//        return "Component{" +
+//                "xPosition=" + xPosition +
+//                ", yPosition=" + yPosition +
+//                ", width=" + width +
+//                ", height=" + height +
+//                ", text='" + text + '\'' +
+//                '}';
+//    }
+
+    public String draw(){
+        return "Component{" +
+                "xPosition=" + xPosition +
+                ", yPosition=" + yPosition +
+                ", width=" + width +
+                ", height=" + height +
+                ", text='" + text + '\'' +
+                '}';
     }
 
 }
