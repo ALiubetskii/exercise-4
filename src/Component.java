@@ -63,25 +63,11 @@ public abstract class Component {
         System.out.println(getText());
     }
 
-//    @Override
-//    public String toString() {
-//        return "Component{" +
-//                "xPosition=" + xPosition +
-//                ", yPosition=" + yPosition +
-//                ", width=" + width +
-//                ", height=" + height +
-//                ", text='" + text + '\'' +
-//                '}';
-//    }
-
-    public String draw(){
-        return "Component{" +
-                "xPosition=" + xPosition +
-                ", yPosition=" + yPosition +
-                ", width=" + width +
-                ", height=" + height +
-                ", text='" + text + '\'' +
-                '}';
+    @Override
+    public String toString() {
+        return "DON'T PANIC!!!";
     }
+
+    public abstract String draw();
 
 }
