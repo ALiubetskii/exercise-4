@@ -19,54 +19,48 @@ public abstract class Component {
         return xPosition;
     }
 
-    public void setxPosition() {
-        this.xPosition = xPosition;
-    }
+//    public void setxPosition() {
+//        this.xPosition = xPosition;
+//    }
 
     public double getyPosition() {
         return yPosition;
     }
 
-    public void setyPosition() {
-        this.yPosition = yPosition;
-    }
+//    public void setyPosition() {
+//        this.yPosition = yPosition;
+//    }
 
     public int getWidth() {
         return width;
     }
 
-    public void setWidth() {
-        this.width = width;
-    }
+//    public void setWidth() {
+//        this.width = width;
+//    }
 
     public int getHeight() {
         return height;
     }
 
-    public void setHeight() {
-        this.height = height;
-    }
+//    public void setHeight() {
+//        this.height = height;
+//    }
 
     public String getText() {
         return text;
     }
 
-    public void setText() {
-        this.text = text;
-    }
-
-    public void print() {
-        System.out.println(getxPosition());
-        System.out.println(getyPosition());
-        System.out.println(getWidth());
-        System.out.println(getHeight());
-        System.out.println(getText());
-    }
+//    public void setText() {
+//        this.text = text;
+//    }
 
     @Override
     public String toString() {
-        return "DON'T PANIC!!!";
+        return "BIG RED BUTTON";
     }
+
+    public abstract String toPrint();
 
     public abstract String draw();
 
